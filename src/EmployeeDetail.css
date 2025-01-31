@@ -1,0 +1,115 @@
+.employee-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .employee-detail-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .employee-detail-title {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .employee-detail-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .employee-image {
+    flex: 0 0 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .employee-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .employee-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .employee-info table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .employee-info th,
+  .employee-info td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .employee-info th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .employee-detail-actions {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .btn-print,
+  .btn-logout {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-print {
+    background-color: #28a745;
+    color: #ffffff;
+  }
+  
+  .btn-logout {
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+  
+  .btn-print:hover {
+    background-color: #218838;
+  }
+  
+  .btn-logout:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 768px) {
+    .employee-detail-content {
+      flex-direction: column;
+    }
+  
+    .employee-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .employee-info {
+      min-width: unset;
+    }
+  }

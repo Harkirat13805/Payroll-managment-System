@@ -1,0 +1,39 @@
+.home-section {
+    padding: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    width: 25%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px; /* Add perspective for 3D effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05) translateY(-10px) rotateX(10deg); /* Add 3D and rising effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .chart-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  

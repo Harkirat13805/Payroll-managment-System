@@ -1,0 +1,55 @@
+.sidebar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar:hover {
+    width: 240px; /* Expand sidebar on hover */
+  }
+  
+  .brand-logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .nav-link {
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+  }
+  
+  .main-content {
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .bg-primary {
+    background-color: #3949ab;
+    color: white;
+  }
+  
+  /* Optional: Add animations for a smoother appearance */
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .main-content {
+    animation: slideInFromLeft 0.5s ease, fadeIn 0.5s ease;
+  }
+  
